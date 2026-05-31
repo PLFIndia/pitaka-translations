@@ -1,0 +1,78 @@
+name: 🌐 Suggest a translation
+description: Propose a translation for a Pitaka UI string. Best used from inside the app (Settings → Help translate Pitaka → long-press any text), which pre-fills this form.
+title: "[string-id][language] short description"
+labels: ["translation", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for translating Pitaka. **The easiest way to file this form is from inside the app** — Settings → Help translate Pitaka → long-press any text. Pitaka pre-fills every field below for you.
+
+        If you're filling this out by hand, please follow the [tone guide](https://github.com/plfindia/pitaka-translations/blob/main/docs/TONE.md) and [glossary](https://github.com/plfindia/pitaka-translations/blob/main/docs/GLOSSARY.md).
+
+  - type: input
+    id: string-id
+    attributes:
+      label: String ID
+      description: The Android string resource name (e.g. `library_title`, `book_detail_lend`). The app pre-fills this.
+      placeholder: e.g. library_empty_headline
+    validations:
+      required: true
+
+  - type: textarea
+    id: english-source
+    attributes:
+      label: English source
+      description: The canonical English text being translated. The app pre-fills this; don't change it.
+      placeholder: No books yet
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Target language
+      description: Which language is your translation for?
+      options:
+        - Hindi
+        - Punjabi
+        - Other (mention in context note)
+    validations:
+      required: true
+
+  - type: textarea
+    id: translation
+    attributes:
+      label: Your suggested translation
+      description: |
+        Match Pitaka's casual tone. Loanwords (Backup, Scan, Settings) are fine. Keep any `%1$s` / `%1$d` placeholders exactly as in the English source.
+      placeholder: कोई किताब नहीं है अभी
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context note (optional)
+      description: Anything the reviewer should know — alternative phrasings you considered, dialect choice, screen this appears on, etc.
+      placeholder: "(none)"
+    validations:
+      required: false
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Pitaka app version
+      description: The app pre-fills this automatically.
+      placeholder: 0.1.0 (1)
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: License acknowledgement
+      description: By submitting this suggestion you agree to release it under the [MIT license](https://github.com/plfindia/pitaka-translations/blob/main/LICENSE) so it can ship in Pitaka.
+      options:
+        - label: I agree to release this translation under MIT.
+          required: true

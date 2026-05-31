@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📖 Tone & style guide
+    url: https://github.com/plfindia/pitaka-translations/blob/main/docs/TONE.md
+    about: How translations should sound — colloquial, not textbook.
+  - name: 📕 Glossary
+    url: https://github.com/plfindia/pitaka-translations/blob/main/docs/GLOSSARY.md
+    about: Locked decisions on brand terms and loanwords.
+  - name: 🐛 Pitaka app bug
+    url: https://github.com/plfindia/pitaka/issues/new
+    about: Bug or feature in the Pitaka Android app itself (not translation-related).
