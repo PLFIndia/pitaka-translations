@@ -59,7 +59,31 @@ Copy the English `<string>` line, then change the value (NOT the `name`). Exampl
 
 ### 4. Open a PR
 
-Branch from `main`, commit your changes, push to your fork, open a PR. CI will verify the XML parses and that no placeholder went missing.
+Branch from `main`, commit your changes, push to your fork, open a PR.
+
+An automated check runs on every PR and must pass before a maintainer merges
+it. It verifies, for each `translations/values-<locale>/strings.xml`:
+
+- the file is valid XML and has no duplicate keys;
+- every key exists in the English source, and fixed values (repo slugs marked
+  `translatable="false"`) are not translated;
+- the `%1$s` / `%1$d` / `%1$.1f` placeholders match the English exactly
+  (re-ordering is fine, dropping or adding one is not);
+- no invisible bidi-override characters are hidden in a value (ZWNJ / ZWJ,
+  which Hindi and Punjabi need for correct rendering, are allowed);
+- letters come only from your locale's own script plus Latin (so a Cyrillic
+  look-alike smuggled into "Cancel" is caught).
+
+You can run the exact same check locally before opening the PR:
+
+```
+python3 scripts/validate_translations.py \
+  --english english/strings.xml \
+  --translations translations
+```
+
+(`english/strings.xml` is a read-only mirror of the app's English source, kept
+in sync automatically — see [english/README.md](english/README.md).)
 
 ---
 

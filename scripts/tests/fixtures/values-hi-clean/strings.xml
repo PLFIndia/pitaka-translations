@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Clean Hindi fixture: every value is legitimate. The validator MUST pass
+     this with zero errors. Exercises: preserved placeholders (re-ordered),
+     literal %%, Latin loanwords (GitHub/ISBN/Backup), ZWNJ/ZWJ conjuncts,
+     partial-locale (only a few keys), Arabic numerals. -->
+<resources>
+    <string name="library_empty_headline">कोई किताब नहीं है अभी</string>
+    <string name="add_book_save">सेव करें</string>
+    <string name="common_ok">ठीक है</string>
+    <!-- placeholder preserved -->
+    <string name="loan_lent_date">दिया गया: %1$s</string>
+    <!-- placeholders re-ordered (allowed) -->
+    <string name="import_summary_books">लाइब्रेरी: %2$d छोड़े गए, %1$d जोड़े गए (पहले से मौजूद)।</string>
+    <!-- literal %% must be tolerated -->
+    <string name="borrower_overdue_rate">देर से लौटाने की दर: %1$d%%</string>
+    <!-- float precision placeholder preserved -->
+    <string name="borrower_avg_return">औसत वापसी: %1$.1f दिन</string>
+    <!-- Latin loanwords mixed with Devanagari (allowed) -->
+    <string name="settings_section_backup">Backup</string>
+    <string name="add_book_isbn_label">ISBN</string>
+    <!-- ZWNJ between letters for correct conjunct rendering (allowed) -->
+    <string name="nav_library">लाइब्रे‌री</string>
+</resources>
