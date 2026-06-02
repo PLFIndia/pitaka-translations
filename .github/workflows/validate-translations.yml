@@ -1,0 +1,57 @@
+name: Validate translations
+
+# F-10: automated hygiene gate for translation contributions.
+# Runs on every PR that touches a translations/values-*/strings.xml file, and
+# on pushes to main. Catches dropped/added printf placeholders, invisible bidi
+# overrides, homoglyph (mixed-script) attacks, attempts to translate fixed
+# repo-slug strings, and oversized strings — none of which a human reviewer
+# reliably catches by eye.
+#
+# The canonical English source-of-truth lives in the APP repo (PLFIndia/pitaka,
+# PRIVATE). We cannot check it out from this public repo's CI without parking a
+# credential here, so instead a read-only mirror is vendored at
+# english/strings.xml and kept current by a one-way sync workflow in the app
+# repo (see english/README.md). CI validates against that mirror — no secret in
+# this repo, no cross-repo checkout.
+
+on:
+  pull_request:
+    paths:
+      - 'translations/**'
+      - 'english/**'
+      - 'scripts/**'
+      - '.github/workflows/validate-translations.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'translations/**'
+      - 'english/**'
+      - 'scripts/**'
+      - '.github/workflows/validate-translations.yml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out translations repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Self-check the validator
+        env:
+          PITAKA_ENGLISH_STRINGS: ${{ github.workspace }}/english/strings.xml
+        run: python3 scripts/tests/test_validator.py
+
+      - name: Validate translation files
+        run: |
+          python3 scripts/validate_translations.py \
+            --english english/strings.xml \
+            --translations translations
