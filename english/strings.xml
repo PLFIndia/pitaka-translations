@@ -30,7 +30,11 @@
     <string name="add_book_genre_label">Genre</string>
     <string name="add_book_language_label">Language</string>
     <string name="add_book_pages_label">Pages</string>
-    <string name="add_book_notes_label">Notes</string>
+    <string name="add_book_notes_label">Notes about the book</string>
+    <string name="add_book_date_added_label">Date added</string>
+    <string name="add_book_date_added_change">Change</string>
+    <string name="add_book_date_added_ok">OK</string>
+    <string name="add_book_notes_support">Things about the book itself — edition, condition, where you got it. For a note about who you\'ve lent it to, add it when you lend the book; those notes stay in your encrypted vault.</string>
     <string name="add_book_location_label">Shelf / location</string>
     <string name="add_book_quantity_label">Quantity</string>
     <string name="add_book_source_type_label">Source</string>
@@ -119,6 +123,24 @@
     <string name="export_format_csv">CSV (spreadsheet)</string>
     <string name="export_format_markdown">Markdown (shareable)</string>
     <string name="export_format_pdf">PDF (book list)</string>
+    <!-- PDF export: column headers and footer -->
+    <string name="pdf_col_title">Title</string>
+    <string name="pdf_col_author">Author</string>
+    <string name="pdf_col_year">Year</string>
+    <string name="pdf_col_isbn">ISBN</string>
+    <string name="pdf_col_publisher">Publisher</string>
+    <string name="pdf_col_genre">Genre</string>
+    <string name="pdf_col_language">Language</string>
+    <string name="pdf_col_pages">Pages</string>
+    <string name="pdf_col_age_group">Age group</string>
+    <string name="pdf_col_quantity">Qty</string>
+    <string name="pdf_col_added_date">Date added</string>
+    <string name="pdf_col_location">Location</string>
+    <string name="pdf_col_source">Source</string>
+    <string name="pdf_col_source_detail">Source detail</string>
+    <string name="pdf_footer_attribution">Book records are generated using Pitak, a free personal and community library software developed by Parallel Line Foundation</string>
+    <string name="export_pdf_columns_title">PDF columns</string>
+    <string name="export_pdf_columns_hint">Choose which fields appear as columns. Title is always included.</string>
     <string name="export_save">Save…</string>
     <string name="export_done">Saved.</string>
 
@@ -140,8 +162,11 @@
     <string name="vault_unlock_button">Unlock vault</string>
     <string name="vault_enable_button">Enable vault</string>
     <string name="vault_prompt_title">Pitaka vault</string>
-    <string name="vault_prompt_subtitle_enable">Confirm to set up the vault</string>
-    <string name="vault_prompt_subtitle_unlock">Confirm to unlock</string>
+    <string name="vault_prompt_subtitle_enable">Confirm with your fingerprint or device screen lock to set up the vault</string>
+    <string name="vault_prompt_subtitle_unlock">Confirm with your fingerprint or device screen lock</string>
+    <string name="vault_unlock_method_note">Use your fingerprint or your device PIN/pattern</string>
+    <string name="vault_unlock_method_warning_not">NOT</string>
+    <string name="vault_unlock_method_warning_rest">your Pitak PIN</string>
     <string name="vault_lock_action">Lock vault</string>
 
     <string name="loans_title">Loans</string>
@@ -174,6 +199,7 @@
     <string name="lend_borrower_contact">Contact (optional)</string>
     <string name="lend_due_date_label">Due date (optional)</string>
     <string name="lend_notes_label">Notes (optional)</string>
+    <string name="lend_notes_support">Kept in your encrypted vault with the borrower\'s details.</string>
     <string name="lend_save">Lend</string>
     <string name="lend_no_borrower">Pick a borrower or type a new name.</string>
 
@@ -303,7 +329,7 @@
     <string name="applock_biometric_help">Use your fingerprint or face to unlock, with your PIN as a fallback.</string>
     <string name="applock_change_pin">Change PIN</string>
     <string name="applock_set_pin_title">Set a PIN</string>
-    <string name="applock_enter_pin_title">Enter PIN</string>
+    <string name="applock_enter_pin_title">Enter your Pitaka PIN</string>
     <string name="applock_confirm_pin_title">Confirm PIN</string>
     <string name="applock_current_pin_title">Enter current PIN</string>
     <string name="applock_pin_mismatch">PINs don\'t match. Try again.</string>
@@ -435,6 +461,7 @@
     <string name="book_detail_row_source">Source</string>
     <string name="book_detail_row_source_detail">Source details</string>
     <string name="book_detail_row_age_group">Age group</string>
+    <string name="book_detail_row_date_added">Date added</string>
     <!-- Source-type provenance categories -->
     <string name="source_type_unset">Not set</string>
     <string name="source_type_purchased">Purchased</string>
