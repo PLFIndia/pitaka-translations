@@ -48,10 +48,13 @@
     <string name="book_detail_edit">Edit</string>
     <string name="book_detail_note">Note</string>
     <string name="book_detail_share">Share</string>
-    <string name="book_detail_delete">Delete</string>
-    <string name="book_detail_delete_confirm_title">Delete this book?</string>
-    <string name="book_detail_delete_confirm_message">This will remove the book from your library. Loan history is not affected.</string>
-    <string name="book_detail_delete_confirm">Delete</string>
+    <string name="book_detail_delete">Remove</string>
+    <string name="book_detail_delete_confirm_title">Remove this book?</string>
+    <string name="book_detail_delete_confirm_message">It will be marked as removed from the library and won\'t appear on your published page. Nothing is erased — you can restore it any time, and loan history stays intact.</string>
+    <string name="book_detail_delete_confirm">Remove</string>
+    <string name="book_detail_restored">Restored to your library.</string>
+    <string name="book_detail_removed_badge">Removed</string>
+    <string name="book_detail_restore">Restore to library</string>
     <string name="book_detail_share_template">%1$s by %2$s</string>
     <string name="book_detail_share_template_with_isbn">%1$s by %2$s (ISBN %3$s)</string>
     <string name="book_detail_share_template_no_author">%1$s</string>
@@ -314,6 +317,39 @@
     <string name="settings_data_explainer_vault">Borrowers and loan records live in an encrypted vault, unlocked with your biometric. They\'re never published and never leave the device except inside an encrypted backup.</string>
     <string name="settings_data_import_help">Bring in books from a Pitaka export (.json) or a Goodreads CSV.</string>
     <string name="settings_data_export_help">Save your books and wishlist as JSON, CSV, or Markdown.</string>
+    <!-- Community library: merge, library ID, maintainer attribution (D40/D41) -->
+    <string name="settings_community_title">Community library</string>
+    <string name="settings_community_help">Share a book list with other maintainers. Each library has an ID — only files from the same library merge automatically.</string>
+    <string name="settings_maintainer_name_label">Your maintainer name</string>
+    <string name="settings_maintainer_name_help">Stamped on books you add, so others can see who catalogued what. Optional.</string>
+    <string name="settings_library_id_label">Library ID</string>
+    <string name="settings_library_id_show_qr">Show QR</string>
+    <string name="settings_library_id_copy">Copy</string>
+    <string name="settings_library_id_copied">Library ID copied</string>
+    <string name="settings_library_id_regenerate">Start a new library ID</string>
+    <string name="settings_scan_library_qr">Scan a library QR</string>
+    <string name="settings_scan_library_qr_help">Point your camera at another maintainer\'s library QR to pair with their library.</string>
+    <string name="merge_scan_qr_title">Scan library QR</string>
+    <string name="merge_scan_qr_hint">Point at another Pitak app\'s library QR</string>
+    <string name="merge_scan_qr_adopted">Paired — your app now shares their library ID. Files from that library will merge automatically.</string>
+    <string name="merge_scan_qr_permission_rationale">Pitaka needs your camera to scan another maintainer\'s library QR and pair with their library. Granting it stays on this device — Pitaka does not send camera frames anywhere.</string>
+    <string name="settings_library_id_qr_title">Your library QR</string>
+    <string name="settings_library_id_qr_body">Have another maintainer scan this to pair their app with your library.</string>
+    <string name="settings_library_id_regen_title">Start a new library ID?</string>
+    <string name="settings_library_id_regen_body">This detaches your app from the current library. Your books stay, but files you export will no longer merge automatically with maintainers who still use the old ID. You can re-pair by scanning their QR.</string>
+    <string name="settings_merge_from_file">Merge from a file</string>
+    <string name="settings_merge_help">Pick a library file another maintainer shared with you. New books are added; anything that differs is shown for you to decide.</string>
+    <!-- Merge result + differ-IDs (Join / Overwrite) -->
+    <string name="merge_result_title">Merge complete</string>
+    <string name="merge_result_summary">%1$d added · %2$d already matched · %3$d to review</string>
+    <string name="merge_differ_title">Different library</string>
+    <string name="merge_differ_body">This file is from “%1$s”, a different library than yours (“%2$s”). How do you want to bring it in?</string>
+    <string name="merge_differ_body_unknown">This file doesn\'t carry a library ID, so it may be from a different library than yours. How do you want to bring it in?</string>
+    <string name="merge_action_join">Join — keep both, combine the lists</string>
+    <string name="merge_action_overwrite">Replace my library entirely</string>
+    <string name="merge_overwrite_confirm_title">Replace your library?</string>
+    <string name="merge_overwrite_confirm_body">This removes all your current books and replaces them with the ones in this file. This can\'t be undone. Use Join instead if you want to keep your books.</string>
+    <string name="merge_cancel">Cancel</string>
     <string name="settings_data_backup_help">Create or restore an encrypted backup archive (includes the vault, protected by your backup passphrase).</string>
 
     <!-- Security tab -->
@@ -462,6 +498,7 @@
     <string name="book_detail_row_source_detail">Source details</string>
     <string name="book_detail_row_age_group">Age group</string>
     <string name="book_detail_row_date_added">Date added</string>
+    <string name="book_detail_row_added_by">Added by</string>
     <!-- Source-type provenance categories -->
     <string name="source_type_unset">Not set</string>
     <string name="source_type_purchased">Purchased</string>
