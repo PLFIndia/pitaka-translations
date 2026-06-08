@@ -54,6 +54,7 @@
     <string name="book_detail_delete_confirm">Remove</string>
     <string name="book_detail_restored">Restored to your library.</string>
     <string name="book_detail_removed_badge">Removed</string>
+    <string name="library_book_not_available_badge">Not available</string>
     <string name="book_detail_restore">Restore to library</string>
     <string name="book_detail_share_template">%1$s by %2$s</string>
     <string name="book_detail_share_template_with_isbn">%1$s by %2$s (ISBN %3$s)</string>
@@ -285,7 +286,7 @@
     <string name="backup_last_n_days_ago">Last backup: %1$d day(s) ago.</string>
     <string name="backup_stale_warning">Your last backup is older than %1$d days. If you lose this phone you lose your vault.</string>
     <string name="backup_saved">Backup saved.</string>
-    <string name="backup_default_filename">pitaka-backup-%1$s.pitabak</string>
+    <string name="backup_default_filename">Pitak-backup-%1$s.pitabak</string>
 
     <string name="restore_title">Restore from archive</string>
     <string name="restore_pick">Pick a .pitabak file…</string>
