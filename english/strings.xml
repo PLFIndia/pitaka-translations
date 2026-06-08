@@ -66,7 +66,7 @@
     <!-- Scanner -->
     <string name="scanner_title">Scan a book</string>
     <string name="scanner_aim_hint">Aim at the back-cover barcode</string>
-    <string name="scanner_permission_rationale">Pitaka needs your camera to scan ISBN barcodes. Granting it stays on this device — Pitaka does not send camera frames anywhere.</string>
+    <string name="scanner_permission_rationale">Pitak needs your camera to scan ISBN barcodes. Granting it stays on this device — Pitak does not send camera frames anywhere.</string>
     <string name="scanner_permission_grant">Grant camera access</string>
     <string name="scanner_permission_open_settings">Open Settings</string>
     <string name="scanner_permission_permanent_denied">Camera access was permanently denied. Open Settings to grant it manually.</string>
@@ -76,7 +76,7 @@
     <string name="add_book_isbn_lookup">Lookup</string>
     <string name="add_book_isbn_lookup_progress">Looking up…</string>
     <string name="add_book_isbn_lookup_not_found_title">No metadata found for that ISBN</string>
-    <string name="add_book_isbn_lookup_not_found_body">Pitaka couldn\'t find this ISBN in Open Library or Google Books. You can search by title, save with just the ISBN, or fill the form yourself.</string>
+    <string name="add_book_isbn_lookup_not_found_body">Pitak couldn\'t find this ISBN in Open Library or Google Books. You can search by title, save with just the ISBN, or fill the form yourself.</string>
     <string name="add_book_isbn_lookup_search_title">Search by title</string>
     <string name="add_book_isbn_lookup_save_skeleton">Save with just ISBN</string>
     <string name="add_book_isbn_lookup_fill_manually">Fill manually</string>
@@ -124,7 +124,7 @@
     <string name="export_scope_both">Both</string>
     <string name="export_format_json">JSON (re-importable)</string>
     <string name="export_format_csv">CSV (spreadsheet)</string>
-    <string name="export_format_markdown">Markdown (shareable)</string>
+    <string name="export_format_bundle">Bundle with covers (.zip)</string>
     <string name="export_format_pdf">PDF (book list)</string>
     <!-- PDF export: column headers and footer -->
     <string name="pdf_col_title">Title</string>
@@ -145,11 +145,13 @@
     <string name="export_pdf_columns_title">PDF columns</string>
     <string name="export_pdf_columns_hint">Choose which fields appear as columns. Title is always included.</string>
     <string name="export_save">Save…</string>
+    <string name="export_share">Share…</string>
+    <string name="export_share_chooser">Share export</string>
     <string name="export_done">Saved.</string>
 
     <string name="import_title">Import</string>
     <string name="import_pick">Pick a file…</string>
-    <string name="import_supported">Pitaka JSON and Goodreads CSV are supported.</string>
+    <string name="import_supported">Pitak JSON, Pitak bundle (.zip, with covers), and Goodreads CSV are supported.</string>
     <string name="import_summary_done">Done.</string>
     <string name="import_summary_format">Format: %1$s</string>
     <string name="import_summary_books">Library: %1$d added, %2$d skipped (already present).</string>
@@ -164,7 +166,7 @@
     <string name="vault_locked_body_existing">Unlock the vault to view loans, borrowers, and pending reminders.</string>
     <string name="vault_unlock_button">Unlock vault</string>
     <string name="vault_enable_button">Enable vault</string>
-    <string name="vault_prompt_title">Pitaka vault</string>
+    <string name="vault_prompt_title">Pitak vault</string>
     <string name="vault_prompt_subtitle_enable">Confirm with your fingerprint or device screen lock to set up the vault</string>
     <string name="vault_prompt_subtitle_unlock">Confirm with your fingerprint or device screen lock</string>
     <string name="vault_unlock_method_note">Use your fingerprint or your device PIN/pattern</string>
@@ -217,7 +219,7 @@
     <string name="pending_empty">Nothing pending.</string>
 
     <string name="backup_passphrase_title">Backup passphrase</string>
-    <string name="backup_passphrase_body">Used only to encrypt portable backup files. Required to restore on a new phone. Pitaka can\'t recover this for you.</string>
+    <string name="backup_passphrase_body">Used only to encrypt portable backup files. Required to restore on a new phone. Pitak can\'t recover this for you.</string>
     <string name="backup_passphrase_field">Passphrase</string>
     <string name="backup_passphrase_hint_field">Optional hint (anyone with this phone can read this)</string>
     <string name="backup_passphrase_save">Save passphrase</string>
@@ -253,7 +255,7 @@
     <string name="publish_contact_phone_hint">e.g. +91 98765 43210</string>
 
     <string name="gh_auth_title">Sign in to GitHub</string>
-    <string name="gh_auth_intro">Pitaka uses your own GitHub OAuth App for sign-in (§1.1 — no developer infrastructure). Register one at github.com/settings/applications/new with the Device Flow option checked and paste the Client ID below.</string>
+    <string name="gh_auth_intro">Pitak uses your own GitHub OAuth App for sign-in (§1.1 — no developer infrastructure). Register one at github.com/settings/applications/new with the Device Flow option checked and paste the Client ID below.</string>
     <string name="gh_auth_client_id">OAuth App Client ID</string>
     <string name="gh_auth_client_id_error">That doesn\'t look like a Client ID. Paste just the Client ID from your OAuth App\'s settings page — not the full URL.</string>
     <string name="gh_auth_use_oauth">Start sign-in (Device Flow)</string>
@@ -268,11 +270,11 @@
     <string name="gh_auth_failed">Sign-in failed: %1$s</string>
 
     <string name="cf_wizard_title">Cloudflare Pages</string>
-    <string name="cf_wizard_intro">Pitaka does not talk to Cloudflare directly. To serve your library from Cloudflare Pages in addition to GitHub Pages, do this once on your own Cloudflare account:</string>
+    <string name="cf_wizard_intro">Pitak does not talk to Cloudflare directly. To serve your library from Cloudflare Pages in addition to GitHub Pages, do this once on your own Cloudflare account:</string>
     <string name="cf_wizard_step1">1. Sign in to dash.cloudflare.com.</string>
     <string name="cf_wizard_step2">2. Workers &amp; Pages → Create application → Pages → Connect to Git.</string>
-    <string name="cf_wizard_step3">3. Pick the same GitHub repo you publish to from Pitaka. Build settings: none. Output directory: /.</string>
-    <string name="cf_wizard_step4">4. Save and deploy. Every time you publish from Pitaka, Cloudflare redeploys automatically.</string>
+    <string name="cf_wizard_step3">3. Pick the same GitHub repo you publish to from Pitak. Build settings: none. Output directory: /.</string>
+    <string name="cf_wizard_step4">4. Save and deploy. Every time you publish from Pitak, Cloudflare redeploys automatically.</string>
 
     <!-- Backup / Restore (Phase 6) -->
     <string name="backup_title">Backup &amp; restore</string>
@@ -294,8 +296,8 @@
     <string name="restore_wrong_passphrase">Passphrase didn\'t match. Try again.</string>
     <string name="restore_warning">This replaces all books, wishlist, and vault data on this device. There is no undo.</string>
     <string name="restore_succeeded_title">Restore complete</string>
-    <string name="restore_succeeded_body">Pitaka will close so the new data takes effect. Re-open the app from your launcher.</string>
-    <string name="restore_succeeded_button">Close Pitaka</string>
+    <string name="restore_succeeded_body">Pitak will close so the new data takes effect. Re-open the app from your launcher.</string>
+    <string name="restore_succeeded_button">Close Pitak</string>
 
     <!-- Settings (Phase 7) -->
     <string name="settings_section_appearance">Appearance</string>
@@ -315,8 +317,15 @@
     <string name="settings_data_explainer_title">What\'s stored, and what\'s private</string>
     <string name="settings_data_explainer_books">Your books and wishlist are stored unencrypted on this device. They\'re the data you can export, publish, and share.</string>
     <string name="settings_data_explainer_vault">Borrowers and loan records live in an encrypted vault, unlocked with your biometric. They\'re never published and never leave the device except inside an encrypted backup.</string>
-    <string name="settings_data_import_help">Bring in books from a Pitaka export (.json) or a Goodreads CSV.</string>
-    <string name="settings_data_export_help">Save your books and wishlist as JSON, CSV, or Markdown.</string>
+    <string name="settings_data_import_help">Bring in books from a Pitak export (.json), a Pitak bundle (.zip, with covers), or a Goodreads CSV.</string>
+    <string name="settings_data_export_help">Save your books and wishlist as JSON, CSV, a bundle with cover images, or PDF.</string>
+    <!-- Data tab: "Transfer & backup" card section labels (Option A grouping) -->
+    <string name="settings_data_card_booklist_label">Your book list</string>
+    <string name="settings_data_card_booklist_caption">Your Library and Wishlist. Plain and shareable — no borrower or loan data.</string>
+    <string name="settings_data_card_import_label">Import a list</string>
+    <string name="settings_data_card_export_label">Export a copy</string>
+    <string name="settings_data_card_backup_label">Full backup</string>
+    <string name="settings_data_card_backup_caption">An encrypted archive of everything — books, wishlist, and your locked vault. Needed to move to a new phone.</string>
     <!-- Community library: merge, library ID, maintainer attribution (D40/D41) -->
     <string name="settings_community_title">Community library</string>
     <string name="settings_community_help">Share a book list with other maintainers. Each library has an ID — only files from the same library merge automatically.</string>
@@ -332,11 +341,15 @@
     <string name="merge_scan_qr_title">Scan library QR</string>
     <string name="merge_scan_qr_hint">Point at another Pitak app\'s library QR</string>
     <string name="merge_scan_qr_adopted">Paired — your app now shares their library ID. Files from that library will merge automatically.</string>
-    <string name="merge_scan_qr_permission_rationale">Pitaka needs your camera to scan another maintainer\'s library QR and pair with their library. Granting it stays on this device — Pitaka does not send camera frames anywhere.</string>
+    <string name="merge_scan_qr_permission_rationale">Pitak needs your camera to scan another maintainer\'s library QR and pair with their library. Granting it stays on this device — Pitak does not send camera frames anywhere.</string>
     <string name="settings_library_id_qr_title">Your library QR</string>
     <string name="settings_library_id_qr_body">Have another maintainer scan this to pair their app with your library.</string>
     <string name="settings_library_id_regen_title">Start a new library ID?</string>
     <string name="settings_library_id_regen_body">This detaches your app from the current library. Your books stay, but files you export will no longer merge automatically with maintainers who still use the old ID. You can re-pair by scanning their QR.</string>
+    <!-- Type-to-confirm guard so a stray tap can't detach the library. The phrase
+         is a deliberate acknowledgement, not a name; the new ID is still random. -->
+    <string name="settings_library_id_regen_confirm_phrase">new library</string>
+    <string name="settings_library_id_regen_confirm_label">Type \"new library\" to confirm</string>
     <string name="settings_merge_from_file">Merge from a file</string>
     <string name="settings_merge_help">Pick a library file another maintainer shared with you. New books are added; anything that differs is shown for you to decide.</string>
     <!-- Merge result + differ-IDs (Join / Overwrite) -->
@@ -365,7 +378,7 @@
     <string name="applock_biometric_help">Use your fingerprint or face to unlock, with your PIN as a fallback.</string>
     <string name="applock_change_pin">Change PIN</string>
     <string name="applock_set_pin_title">Set a PIN</string>
-    <string name="applock_enter_pin_title">Enter your Pitaka PIN</string>
+    <string name="applock_enter_pin_title">Enter your Pitak PIN</string>
     <string name="applock_confirm_pin_title">Confirm PIN</string>
     <string name="applock_current_pin_title">Enter current PIN</string>
     <string name="applock_pin_mismatch">PINs don\'t match. Try again.</string>
@@ -374,12 +387,12 @@
     <string name="applock_locked_title">App locked</string>
     <string name="applock_use_pin">Use PIN</string>
     <string name="applock_use_biometric">Use biometric</string>
-    <string name="applock_unlock_biometric_subtitle">Unlock Pitaka</string>
+    <string name="applock_unlock_biometric_subtitle">Unlock Pitak</string>
     <string name="applock_forgot_pin">Forgot PIN?</string>
     <string name="applock_forgot_pin_reset">Reset with device unlock</string>
     <string name="applock_forgot_pin_explain">Confirm your phone\'s screen lock to turn off app lock. Your library and vault data are not affected.</string>
     <string name="applock_throttle_wait">Too many attempts. Try again in %1$d s.</string>
-    <string name="applock_autolock_label">Re-lock after</string>
+    <string name="applock_autolock_label">Re-lock app after</string>
     <string name="applock_timeout_immediate">Immediately</string>
     <string name="applock_timeout_30s">30s</string>
     <string name="applock_cancel">Cancel</string>
@@ -401,7 +414,7 @@
     <string name="settings_dynamic_color">Use device dynamic color</string>
     <string name="settings_dynamic_color_help">Android 12+ only. Replaces the saffron palette with one derived from your wallpaper.</string>
 
-    <string name="settings_auto_lock">Auto-lock timeout</string>
+    <string name="settings_auto_lock">Vault auto-lock</string>
     <string name="settings_auto_lock_15s">15s</string>
     <string name="settings_auto_lock_60s">60s</string>
     <string name="settings_auto_lock_5m">5m</string>
@@ -508,10 +521,11 @@
     <string name="source_type_other">Other</string>
     <!-- Age group bands (order = sort order) -->
     <string name="age_group_unset">Not set</string>
-    <string name="age_group_0_5">0–5</string>
-    <string name="age_group_6_10">6–10</string>
-    <string name="age_group_11_16">11–16</string>
-    <string name="age_group_advance">Advance</string>
+    <string name="age_group_above_3">Above 3</string>
+    <string name="age_group_above_6">Above 6</string>
+    <string name="age_group_above_10">Above 10</string>
+    <string name="age_group_above_15">Above 15</string>
+    <string name="age_group_advanced">Advanced</string>
 
     <!-- Library sort + filter controls (feature 3) -->
     <string name="library_sort_prefix">Sort: %1$s</string>
@@ -534,6 +548,7 @@
 
     <!-- Export (extracted) -->
     <string name="export_save_failed">Save failed.</string>
+    <string name="export_share_failed">Couldn\'t prepare the export to share.</string>
     <string name="export_scope_title">Scope</string>
     <string name="export_format_title">Format</string>
 
@@ -598,7 +613,7 @@
     <!-- Backup (extracted) -->
     <string name="backup_error_cant_open_destination">Couldn\'t open destination.</string>
     <string name="backup_error_no_blob">Archive has no backup blob.</string>
-    <string name="backup_error_schema_too_new">Archive is from a newer Pitaka (v%1$d).</string>
+    <string name="backup_error_schema_too_new">Archive is from a newer Pitak (v%1$d).</string>
 
     <!-- Vault (extracted) -->
     <string name="vault_error_not_initialized">Vault not initialized</string>
@@ -610,21 +625,21 @@
     <!-- ===================================================================
          Phase 1 localization — Contributor mode UI.
          Strings shown only when a user has opted in to "Help translate
-         Pitaka". Regular users never see these.
+         Pitak". Regular users never see these.
          =================================================================== -->
 
     <!-- Settings section -->
-    <string name="settings_section_translate">Help translate Pitaka</string>
+    <string name="settings_section_translate">Help translate Pitak</string>
     <string name="settings_translate_toggle_label">Localization Contributor mode</string>
-    <string name="settings_translate_toggle_help">When on, long-press any UI text in Pitaka to suggest a better translation. Suggestions go to a public GitHub repo. Turn off any time.</string>
+    <string name="settings_translate_toggle_help">When on, long-press any UI text in Pitak to suggest a better translation. Suggestions go to a public GitHub repo. Turn off any time.</string>
     <string name="settings_translate_hints_label">Show translatable text</string>
     <string name="settings_translate_hints_help">Draw a box around every UI text you can long-press to suggest a translation. Stays on until you turn it off.</string>
     <string name="settings_translate_hints_demo">Translatable Text</string>
     <string name="settings_translate_hints_example_label">Example</string>
 
     <!-- Translate tab: onboarding guide shown only when Contributor mode is OFF. -->
-    <string name="settings_translate_guide_title">Help translate Pitaka</string>
-    <string name="settings_translate_guide_intro">Pitaka is translated by its community. If you can read another language, you can suggest better wording — right from the app.</string>
+    <string name="settings_translate_guide_title">Help translate Pitak</string>
+    <string name="settings_translate_guide_intro">Pitak is translated by its community. If you can read another language, you can suggest better wording — right from the app.</string>
     <string name="settings_translate_guide_step1">Create a free GitHub account (this is where suggestions are collected).</string>
     <string name="settings_translate_guide_step2">Turn on Contributor mode using the switch above.</string>
     <string name="settings_translate_guide_step3">Long-press any text in the app you\'d like to translate.</string>
