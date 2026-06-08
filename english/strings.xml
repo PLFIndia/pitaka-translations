@@ -424,6 +424,8 @@
 
     <string name="settings_about_version">Version %1$s</string>
     <string name="settings_about_blurb">पिटक — your personal library, on your device.</string>
+    <!-- Short in-app disclaimer (Settings → About). Full text ships as DISCLAIMER.md. -->
+    <string name="settings_about_disclaimer">Free to use, provided “as is” with no warranty. You are responsible for your own data, backups, and anything you publish. We collect nothing and are not liable for any loss. Use at your own risk.</string>
 
     <!-- Pending screen extras -->
     <string name="pending_backup_stale_title">Backup is stale</string>
