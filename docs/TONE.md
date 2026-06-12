@@ -75,11 +75,11 @@ Pitaka's English copy is deliberately casual ("No books yet", "Just mark purchas
 
 ### Example 6 — informational copy with technical terms
 
-**English:** "Pitaka uses your own GitHub OAuth App for sign-in (§1.1 — no developer infrastructure). Register one at github.com/settings/applications/new with the Device Flow option checked and paste the Client ID below."
+**English:** "Pitaka uses your own GitHub OAuth App for sign-in — nothing runs on a developer server. Register one at github.com/settings/applications/new with the Device Flow option checked and paste the Client ID below."
 
 This kind of string mixes technical terms (GitHub, OAuth App, Device Flow, Client ID) with instructional copy. Keep technical terms in English. Translate the connective tissue.
 
-✅ Hindi: "साइन-इन के लिए Pitaka आपकी अपनी GitHub OAuth App इस्तेमाल करता है (§1.1 — कोई डेवलपर इन्फ़्रास्ट्रक्चर नहीं)। github.com/settings/applications/new पर एक रजिस्टर करें, Device Flow option टिक करें, और नीचे Client ID पेस्ट करें।"
+✅ Hindi: "साइन-इन के लिए Pitaka आपकी अपनी GitHub OAuth App इस्तेमाल करता है — डेवलपर के किसी server पर कुछ नहीं चलता। github.com/settings/applications/new पर एक रजिस्टर करें, Device Flow option टिक करें, और नीचे Client ID पेस्ट करें।"
 
 (URLs, "OAuth App", "Device Flow", "Client ID", "GitHub" all stay English. Result: a Hindi sentence that an actual dev-curious user will understand instantly.)
 
